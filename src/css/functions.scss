@@ -1,0 +1,4 @@
+@function w($width, $parWidth) {
+	$percent: $width * 100% / $parWidth;
+	@return $percent;
+}

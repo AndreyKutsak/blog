@@ -1,17 +1,54 @@
-import React from 'react';
-import ReactDOM from 'react-dom/client';
-import './index.css';
-import App from './App';
-import reportWebVitals from './reportWebVitals';
+import React from "react";
+import ReactDOM from "react-dom/client";
+import { BrowserRouter, Routes, Route, Link } from "react-router-dom";
 
-const root = ReactDOM.createRoot(document.getElementById('root'));
+import "./css/common.css";
+import "./css/resset.css";
+import Header from "./components/header";
+import Sidebar from "./components/sidebar";
+const root = ReactDOM.createRoot(document.getElementById("root"));
+const data = {
+	menu: {
+		item: { link: "app.jsx", desc: "home", dropdown: false },
+		item1: { link: "app.jsx", desc: "home", dropdown: false },
+		item2: { link: "app.jsx", desc: "home", dropdown: false },
+		item4: {
+			link: "app.jsx",
+			desc: "home",
+			dropdown: {
+				item: { link: "app.jsx", desc: "home", dropdown: false },
+				item1: { link: "app.jsx", desc: "home", dropdown: false },
+				item2: { link: "app.jsx", desc: "home", dropdown: false },
+				item4: { link: "app.jsx", desc: "home", dropdown: false },
+				item5: { link: "app.jsx", desc: "home", dropdown: false },
+				item6: { link: "app.jsx", desc: "home", dropdown: false },
+			},
+		},
+		item5: { link: "app.jsx", desc: "home", dropdown: false },
+		item6: { link: "app.jsx", desc: "home", dropdown: false },
+	},
+	sidebar: {
+		avatarBg:
+			"https://upload.wikimedia.org/wikipedia/commons/thumb/9/9a/Gull_portrait_ca_usa.jpg/1280px-Gull_portrait_ca_usa.jpg",
+		avatarBgAlt: "user baground",
+		avatar:
+			"https://parrotprint.com/wp/wp-content/uploads/2017/04/pexels-photo-27411.jpg",
+		avatarAlt: "Anna pivovar",
+		userName: "Anna Pivovar",
+		userJob: "junior front enddeveloper",
+		social: {
+			inst: { url: "instagram.com", src: "", alt: "" },
+			fb: { url: "fb.com", src: "", alt: "" },
+		},
+		userDesc:
+			"lorem ipsumdolor sit amet, incor delivery lorem ipsumdolor sit amet, incor deliverylorem ipsumdolor sit amet, incor deliverylorem ipsumdolor sit amet, incor deliverylorem ipsumdolor sit amet, incor delivery",
+	},
+};
 root.render(
-  <React.StrictMode>
-    <App />
-  </React.StrictMode>
+	<main>
+		<div className='wraper'>
+			<Sidebar sidebar={data.sidebar}></Sidebar>
+			<Header menu={data.menu}></Header>
+		</div>
+	</main>
 );
-
-// If you want to start measuring performance in your app, pass a function
-// to log results (for example: reportWebVitals(console.log))
-// or send to an analytics endpoint. Learn more: https://bit.ly/CRA-vitals
-reportWebVitals();

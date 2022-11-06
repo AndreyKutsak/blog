@@ -1,0 +1,109 @@
+.sidebar {
+  background-color: #202020;
+  width: 29.8507462687%;
+  box-shadow: 5px 0px 15px rgba(5, 5, 5, 0.1);
+  height: 100vh;
+}
+.sidebar .avatar-wraper {
+  position: relative;
+  height: 180px;
+  margin-bottom: 69px;
+}
+.sidebar .avatar-wraper .avatar-bg {
+  height: 100%;
+  width: 100%;
+  -o-object-fit: cover;
+     object-fit: cover;
+}
+.sidebar .avatar-wraper .user-avatar {
+  position: absolute;
+  top: 100%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  height: 100px;
+  width: 100px;
+  border-radius: 50%;
+  border: 2px solid #fff;
+  -o-object-fit: cover;
+     object-fit: cover;
+}
+.sidebar .user-name {
+  font-family: "Roboto", sans-serif;
+  font-weight: 400;
+  font-size: 18px;
+  line-height: 21px;
+  text-align: center;
+  color: #fff;
+  margin-bottom: 5px;
+}
+.sidebar .user-job {
+  font-family: "Roboto", sans-serif;
+  font-weight: 300;
+  font-size: 14px;
+  line-height: 16px;
+  text-align: center;
+  color: #dedede;
+  margin-bottom: 17px;
+  max-width: 185px;
+  margin: 0 auto;
+}
+.sidebar .social-list {
+  display: flex;
+  justify-content: center;
+  padding-bottom: 30px;
+  max-width: 260px;
+  margin: 0 auto 30px;
+  border-bottom: 1px solid #1c1c1c;
+}
+.sidebar .social-list .social-item {
+  padding: 0 7px;
+}
+.sidebar .social-list .social-item a {
+  transition: 0.4s;
+}
+.sidebar .social-list .social-item a:hover {
+  transform: scale(1.05);
+}
+.sidebar .user-desc {
+  font-family: "Roboto", sans-serif;
+  font-weight: 400;
+  font-size: 12px;
+  line-height: 18px;
+  text-align: center;
+  color: #fff;
+  max-width: 260px;
+  margin: 0 auto 30px;
+  padding-bottom: 30px;
+  border-bottom: 1px solid #1c1c1c;
+}
+.sidebar .btn-wraper {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  max-width: 260px;
+  margin: 0 auto;
+}
+.sidebar .btn-wraper .btn {
+  font-family: "Roboto", sans-serif;
+  font-weight: 500;
+  font-size: 12px;
+  line-height: 14px;
+  text-align: center;
+  color: #fff;
+  display: block;
+  width: 120px;
+  padding: 13px;
+  border-radius: 25px;
+  transition: 0.4s;
+}
+.sidebar .btn-wraper .btn:hover {
+  transform: scale(1.05);
+}
+.sidebar .btn-wraper .btn-works {
+  background-color: #ed3024;
+  box-shadow: 0px 7px 17px -10px rgba(242, 63, 63, 0.2);
+}
+.sidebar .btn-wraper .btn-write {
+  background-color: #3137c9;
+  box-shadow: 0px 7px 17px -10px rgba(32, 84, 219, 0.35);
+}/*# sourceMappingURL=sidebar.css.map */

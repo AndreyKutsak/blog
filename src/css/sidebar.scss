@@ -1,0 +1,111 @@
+@import "varibles.scss";
+@import "functions.scss";
+.sidebar {
+	background-color: $dark;
+	width: w(300, 1005);
+	box-shadow: $sidebarShadow;
+
+	height: 100vh;
+	.avatar-wraper {
+		position: relative;
+		height: 180px;
+		margin-bottom: 69px;
+		.avatar-bg {
+			height: 100%;
+			width: 100%;
+			object-fit: cover;
+		}
+		.user-avatar {
+			position: absolute;
+			top: 100%;
+			left: 50%;
+			transform: translate(-50%, -50%);
+			height: 100px;
+			width: 100px;
+			border-radius: 50%;
+			border: 2px solid $white;
+			object-fit: cover;
+		}
+	}
+	.user-name {
+		font-family: $roboto;
+		font-weight: 400;
+		font-size: 18px;
+		line-height: 21px;
+		text-align: center;
+		color: $white;
+		margin-bottom: 5px;
+	}
+	.user-job {
+		font-family: $roboto;
+		font-weight: 300;
+		font-size: 14px;
+		line-height: 16px;
+		text-align: center;
+		color: $porple100;
+		margin-bottom: 17px;
+		max-width: 185px;
+		margin: 0 auto;
+	}
+	.social-list {
+		display: flex;
+		justify-content: center;
+		padding-bottom: 30px;
+		max-width: 260px;
+		margin: 0 auto 30px;
+		border-bottom: 1px solid $dark100;
+
+		.social-item {
+			padding: 0 7px;
+			a {
+				transition: 0.4s;
+				&:hover {
+					transform: scale(1.05);
+				}
+			}
+		}
+	}
+	.user-desc {
+		font-family: $roboto;
+		font-weight: 400;
+		font-size: 12px;
+		line-height: 18px;
+		text-align: center;
+		color: $white;
+		max-width: 260px;
+		margin: 0 auto 30px;
+		padding-bottom: 30px;
+		border-bottom: 1px solid $dark100;
+	}
+	.btn-wraper {
+		display: flex;
+		justify-content: space-between;
+		align-items: center;
+		max-width: 260px;
+		margin: 0 auto;
+		.btn {
+			font-family: $roboto;
+			font-weight: 500;
+			font-size: 12px;
+			line-height: 14px;
+			text-align: center;
+			color: $white;
+			display: block;
+			width: 120px;
+			padding: 13px;
+			border-radius: 25px;
+			transition: 0.4s;
+			&:hover {
+				transform: scale(1.05);
+			}
+		}
+		.btn-works {
+			background-color: $red;
+			box-shadow: $btnWorkShadow;
+		}
+		.btn-write {
+			background-color: $blue;
+			box-shadow: $btnWriteShadow;
+		}
+	}
+}
