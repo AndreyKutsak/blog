@@ -6,6 +6,7 @@ import "./css/common.css";
 import "./css/resset.css";
 import Header from "./components/header";
 import Sidebar from "./components/sidebar";
+import Preloader from "./components/prelaoder";
 const root = ReactDOM.createRoot(document.getElementById("root"));
 const data = {
 	menu: {
@@ -48,7 +49,10 @@ root.render(
 	<main>
 		<div className='wraper'>
 			<Sidebar sidebar={data.sidebar}></Sidebar>
-			<Header menu={data.menu}></Header>
+			<div className='content-wraper'>
+				<Header menu={data.menu}></Header>
+				<Preloader></Preloader>
+			</div>
 		</div>
 	</main>
 );

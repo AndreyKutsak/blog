@@ -15,4 +15,8 @@ a {
   display: flex;
   justify-content: center;
   align-items: flex-start;
+  width: 100%;
+}
+.wraper .content-wraper {
+  width: 100%;
 }/*# sourceMappingURL=common.css.map */
